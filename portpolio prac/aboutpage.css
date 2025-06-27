@@ -1,0 +1,250 @@
+/* Simple Enhanced Design */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/abc.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    margin-top: 60px;  /* Adjust this value based on the height of your navbar */
+
+
+
+}
+
+/* Header with full width and gradient */
+header {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Sections as full-width cards */
+section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+    padding: 2rem;
+}
+
+/* Skills list with hover effect */
+.skills {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.skills h2 {
+  text-align: left;
+
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+li span {
+  font-size: 1.2em;
+  color: #333;
+}
+
+progress {
+  width: 70%;
+  height: 20px;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #007bff; /* Blue color for progress */
+  border-radius: 8px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #007bff; /* For Firefox */
+  border-radius: 8px;
+}
+
+.percentage {
+  font-size: 1.1em;
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Contact section links */
+.contactcon a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contactcon a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+
+.skills li {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    padding: 0.8rem 1.2rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .skills li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  /* Basic Navbar Styling */
+/* Navbar styles */
+/* Navbar styles */
+/* Navbar styles */
+/* Navbar styles */
+/* Navbar styles */
+.navbar {
+  background-color: #333;  /* Dark background for the navbar */
+  padding: 15px 0;  /* Top and bottom padding */
+  position: fixed;  /* Fixed positioning to stay on the top */
+  top: 0;
+  left: 0;  /* Align the navbar to the left side */
+  width: 100%;  /* Make the navbar span the entire width of the screen */
+  height: 50px;  /* Optional, adjust height based on your design */
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+/* Navbar list styling */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;  /* Flexbox for horizontal alignment */
+  justify-content: flex-start;  /* Align items to the left */
+  align-items: center;  /* Center the items vertically within the navbar */
+}
+
+.navbar ul li {
+  margin: 0 15px;  /* Horizontal margin between items */
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  display: block;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  background-color: #007bff; /* Blue background on hover or when focused */
+  color: #fff;
+}
+
+/* Active link effect */
+.navbar ul li a:active {
+  background-color: #0056b3; /* Darker blue when clicked */
+  color: #fff;
+}
+
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;  /* Make navbar full-width on small screens */
+    height: auto;  /* Allow the height to adjust */
+    position: static;  /* Let the navbar move with the content */
+  }
+
+  .navbar ul {
+    flex-direction: row;  /* Keep the links horizontally aligned */
+    text-align: center;  /* Center the links horizontally */
+  }
+
+  .navbar ul li {
+    margin: 0 10px;  /* Horizontal margin for mobile */
+  }
+
+  .navbar ul li a {
+    padding: 12px;  /* Adjust padding for mobile */
+  }
+}
+
+
+
+/* Adjust header spacing to account for the fixed navbar */
+header {
+  margin-top: 60px;    /* Adds space between navbar and header */
+  padding: 20px;       /* Padding inside the header */
+  text-align: center;
+  background-color: #f5f5f5; /* Optional: background color for header */
+}
+
+header h2 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #eae1e1;
+}

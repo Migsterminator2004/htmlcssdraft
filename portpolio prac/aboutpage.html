@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="aboutpage.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <title>About</title>
+</head>
+<body>
+          <nav class="navbar" id="sidebar">
+    <ul>
+      <li><a href="first.htm">Home</a></li>
+      <li><a href="aboutpage.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h2>Hi I'm Miguel Calumba</h2>
+    <p>Welcome to my portfolio</p>
+  </header>
+
+  <section class="skillscon">
+    <p>Hi, I'm a new developer currently practicing coding to enhance my skills in front-end development and fully embrace my passion for technology.</p>
+  </section>
+   
+  <section class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>
+      <span>HTML</span>
+      <progress value="90" max="100"></progress>
+      <span class="percentage">90%</span>
+    </li>
+    <li>
+      <span>CSS</span>
+      <progress value="80" max="100"></progress>
+      <span class="percentage">80%</span>
+    </li>
+    <li>
+      <span>JavaScript (coming soon)</span>
+      <progress value="0" max="100"></progress>
+      <span class="percentage">0%</span>
+    </li>
+    <li>
+      <span>Java (basics)</span>
+      <progress value="50" max="100"></progress>
+      <span class="percentage">50%</span>
+    </li>
+    <li>
+      <span>PHP (coming soon)</span>
+      <progress value="30" max="100"></progress>
+      <span class="percentage">30%</span>
+    </li>
+    <li>
+      <span>Canva Editing</span>
+      <progress value="85" max="100"></progress>
+      <span class="percentage">85%</span>
+    </li>
+  </ul>
+</section>
+
+  <section class="contactcon">
+    <h2>Contact Me</h2>
+    <p>Email: test.gmail.com</p>
+    <p>FB Account: <a href="https://www.facebook.com/miguel.calumba.3/" target="_blank">Miguel Calumba</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Miguel Calumba. All rights reserved.</p>
+  </footer>
+   <script>// JavaScript for highlighting the active link
+const navLinks = document.querySelectorAll('.navbar ul li a');
+
+// Highlight the active link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(item => item.classList.remove('active')); // Remove 'active' from all links
+    link.classList.add('active'); // Add 'active' to the clicked link
+  });
+});
+</script>
+</body>
+</html>
